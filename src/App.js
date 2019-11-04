@@ -1,12 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
+import {useSelector} from 'react-redux';
 import './App.css';
 
+
+
+
 function App() {
+const as=useSelector((aa)=>aa.MainReducer.name)
+const bs=useSelector((aa)=>aa.SubReducer.age)
+console.log(as,bs)
   return (
-    <div className="App">
-     <h>my first react js App</h>
+    
+    <div >
+      <div className="HeaderContainer">
+       <h1>my first react js App</h1>
+      </div>
     </div>
+    
   );
 }
 
